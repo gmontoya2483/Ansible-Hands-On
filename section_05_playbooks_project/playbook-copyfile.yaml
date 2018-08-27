@@ -1,0 +1,7 @@
+- name: Copy file to target servers Play
+  hosts: all
+  tasks:
+    - name: Copy file
+      copy:
+        src: test-file.txt
+        dest: /home/osboxes/test-file.txt
