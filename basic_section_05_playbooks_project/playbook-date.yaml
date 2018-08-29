@@ -1,0 +1,5 @@
+- name: Test connectivity to target servers Play
+  hosts: localhost, all
+  tasks:
+    - name: Execute a date command
+      command: date

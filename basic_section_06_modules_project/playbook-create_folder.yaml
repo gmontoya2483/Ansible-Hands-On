@@ -1,0 +1,8 @@
+- name: Copy file to target servers Play
+  hosts: localhost
+  tasks:
+    - name: Create a folder
+      command: mkdir temp
+      args:
+        chdir: /home/osboxes
+        creates: /home/osboxes/temp
